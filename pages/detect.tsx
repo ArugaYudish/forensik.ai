@@ -33,7 +33,7 @@ export default function DetectPage() {
       <main className="chat-main mt-5">
         <div className="chat-box mt-5">
           <div className="message bot-message">
-            <p>Upload an image to check if it's AI-generated.</p>
+            <p>Upload an image to check if its AI-generated.</p>
           </div>
           {image && (
             <div className="message user-message">

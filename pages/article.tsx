@@ -6,6 +6,8 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { articles } from '@/data/articles'
 import Link from 'next/link'
+import Image from 'next/image';
+
 
 const Article: NextPage = () => {
   return (
@@ -23,7 +25,7 @@ const Article: NextPage = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {articles.map((article) => (
             <div key={article.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img src={article.image} alt={article.title} className="w-full h-40 object-cover" />
+              <Image src={article.image} alt={article.title} className="w-full h-40 object-cover" />
               <div className="p-4">
                 <h2 className="text-xl font-bold text-[#2C254F] mb-2">{article.title}</h2>
                 <p className="text-gray-700 mb-4">{article.description}</p>

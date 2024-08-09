@@ -5,6 +5,8 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import { articles } from '@/data/articles'
 import '../../styles/globals.css'
+import Image from 'next/image';
+
 
 
 const ArticleDetail: NextPage = () => {
@@ -28,7 +30,7 @@ const ArticleDetail: NextPage = () => {
 
       <main className="container mx-auto flex-grow p-6">
         <h1 className="text-4xl font-extrabold text-[#2C254F] mb-4">{article.title}</h1>
-        <img src={article.image} alt={article.title} className="w-full h-80 object-cover mb-6" />
+        <Image src={article.image} alt={article.title} className="w-full h-80 object-cover mb-6" />
         <p className="text-gray-700">{article.content}</p>
       </main>
 

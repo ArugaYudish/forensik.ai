@@ -4,6 +4,9 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Image from 'next/image';
+import Link from 'next/link';
+
 
 const Home: NextPage = () => {
   return (
@@ -21,11 +24,11 @@ const Home: NextPage = () => {
           Forensik.ai
         </h1>
         <p className="text-xl text-gray-700 mb-8">
-        let's create a safe digital world and detect whether a photo or video is AI-generated or not.        </p>
-        <img src="/images/ai2.jpeg" alt="AI Detection" className="w-1/2 max-w-3xl h-auto mb-8 rounded-lg shadow-lg" />
-        <a href="/detect" className="inline-block bg-[#2C254F] text-white text-lg font-semibold py-3 px-6 rounded-lg shadow hover:bg-[#1e1c3f] transition duration-300">
+        lets create a safe digital world and detect whether a photo or video is AI-generated or not.        </p>
+        <Image src="/images/ai2.jpeg" alt="AI Detection" className="w-1/2 max-w-3xl h-auto mb-8 rounded-lg shadow-lg" />
+        <Link href="/detect" className="inline-block bg-[#2C254F] text-white text-lg font-semibold py-3 px-6 rounded-lg shadow hover:bg-[#1e1c3f] transition duration-300">
           Try Forensic the Content
-        </a>
+        </Link>
       </main>
 
       <Footer />
