@@ -4,6 +4,8 @@ const nextConfig = {
      images: {
     unoptimized: true, // ➜ WAJIB untuk export statis
   },
+    assetsPrefix:'/out',
+    basePath:'/out',
 
 };
 
